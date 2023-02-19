@@ -1,0 +1,9 @@
+const express = require("express");
+const { getProduct, saveProduct } = require("../controllers/users.products");
+const router = express.Router();
+
+router.get("/products", getProduct);
+
+router.post("/products", saveProduct);
+
+module.exports = router;
